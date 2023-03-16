@@ -1,6 +1,6 @@
 const readline = require('readline-sync');
 
-var numero = readline.questionInt('Digite que deseja encontrar na sequencia de Fibonacci: ');
+var numero = readline.questionInt('Digite o numero que deseja encontrar na sequencia de Fibonacci: ');
 
 function Fibonacci(numero) {
   let aux, numero1 = 0,
@@ -15,10 +15,9 @@ function Fibonacci(numero) {
     arr.push(numero2);
   }
 
-  if(arr.includes(numero)){
-    console.log(numero, 'Contem na Sequencia de Fibonacci.')
-  }else{
-    console.log(numero, 'Não contem na sequencia de Fibonacci.')
+  if (arr.includes(numero)) {
+    return console.log(numero, 'Contem na sequencia de Fibonacci.');
   }
+  return console.log(numero, 'Não contem na sequencia de Fibonacci.');
 }
 Fibonacci(numero);
