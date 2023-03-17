@@ -2,7 +2,7 @@ const readline = require('readline-sync');
 
 var numero = readline.questionInt('Digite o numero que deseja encontrar na sequencia de Fibonacci: ');
 
-function Fibonacci(numero) {
+const Fibonacci = (numero) => {
   let aux, numero1 = 0,
     numero2 = 1;
   let arr = [];
