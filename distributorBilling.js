@@ -8,10 +8,10 @@ const getNumber = async () => {
   const values = JSON.parse(data).map((object) => object.valor);
   const biggerValue = Math.max.apply(Math, values);
   const smallerValue = Math.min.apply(Math, values);
-  var sum = 0;
-  var highestAverageValue = 0;
+  let sum = 0;
+  let highestAverageValue = 0;
 
-  var businessDay = 0;
+  let businessDay = 0;
 
   for (let i = 0; i < values.length; i++) {
     sum += values[i];
